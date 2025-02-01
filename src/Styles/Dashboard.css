@@ -1,0 +1,119 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #121212;
+    color: white;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #1e1e1e;
+    padding: 15px 30px;
+  }
+  
+  .nav-left .logo {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .nav-center {
+    display: flex;
+    gap: 40px;
+  }
+  
+  .nav-item {
+    cursor: pointer;
+  }
+  
+  .nav-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .search-bar {
+    display: flex;
+    align-items: center;
+    background: #222;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+  
+  .search-bar input {
+    background: none;
+    border: none;
+    color: white;
+    margin-left: 5px;
+    outline: none;
+  }
+  
+  .dashboard {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+  
+  .content {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .stats {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .card {
+    background: #222;
+    padding: 15px;
+    border-radius: 8px;
+    flex: 1;
+    text-align: center;
+  }
+  
+  .value {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .calendar {
+    background: #222;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+  }
+  
+  .calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 30px);
+    gap: 5px;
+  }
+  
+  .day {
+    width: 30px;
+    height: 30px;
+    background: #444;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+  }
+  
+  .active {
+    background: #00f;
+  }
+  
+  .activities {
+    background: #222;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+  }
+  
+  .activity {
+    margin-bottom: 10px;
+  }
+  
