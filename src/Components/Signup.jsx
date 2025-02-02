@@ -1,13 +1,19 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import React, { useEffect, useState } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { Mail, Lock, User, ArrowRight } from 'lucide-react';
 
-const SignUp = () => {
+const SignUp = ({auth}) => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-
+  const navigate = useNavigate()
+  useEffect(() => {
+    if(localStorage.getItem('isAuthenticated') == true){
+      navigate("/")
+    }
+  },[])
+  
   const handleSubmit = (e) => {
     e.preventDefault();
     // Handle signup logic here

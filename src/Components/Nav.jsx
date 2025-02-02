@@ -25,6 +25,7 @@ const NavBar = () => {
         <Link to="/virtual-sessions" className="nav-item">
           <TvMinimalPlay size={20} />
         </Link>
+      
       </div>
       <div className="nav-right">
         <div className="search-bar">
