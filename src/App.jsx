@@ -28,9 +28,9 @@ const App = () => {
         {/* Routes for login and signup */}
         {!auth ? (
           <>
-            <Route path='/login' element={<Login />} />
+            <Route path='/login' element={<Login setAuth={setAuth} />} />
             <Route path='/signup' element={<Signup />} />
-            <Route path='/*' element={<Navigate to='/login' />} /> {/* Redirect to login if not authenticated */}
+            <Route path='/*' element={<Navigate to='/dashboard' />} /> {/* Redirect to login if not authenticated */}
           </>
         ) : (
           <>
